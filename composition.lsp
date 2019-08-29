@@ -8,7 +8,7 @@
 ; --     (expand (lambda (x) (g (f x))) 'g 'f)
 ; --     (throw-error "functions must be curryfied")))
 
-; to use just (load composition.lsp)  
+; to use just (load "https://raw.githubusercontent.com/pepdiz/newlisp/master/composition.lsp")  
 ; but better remove tests first!
 
 ; mathematical composition (but reversed notation)
