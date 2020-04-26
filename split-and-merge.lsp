@@ -4,8 +4,6 @@
 (define (node-action n) (nth 1 n))
 (define (node-name n) (nth 2 n))
 (define (node-eval n) (if (nil? (node-action n)) (node-value n) (throw-error "unevaluable node")))
-
-; posible mejora: si incluimos la condiicion de reducir cuando nodelist tenga 2 elemntos, no es necesario ç (puede tener cualquier valor,  ej nil) ni incluirlo en la lista de prioridades    
 (define (merge nodelist)
   (letn
     (priority '(+ - * / ^)
