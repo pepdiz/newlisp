@@ -25,7 +25,6 @@
    (cond 
     ((empty? str) '())
     ((numero? str) (list (make-token (float str) nil)))  
-    ((<= OP 0) (throw-error (format "%s is not valid" str))) ; creo que puede eliminase y asumirse en la true 
     (LNUM (cons (make-token LNUM (sym (str OP))) (split (slice str (+ OP 1)))))
     (true     (throw-error (format "%s is not valid" str))) )))
 
